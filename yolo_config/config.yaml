@@ -1,0 +1,10 @@
+path: ../datasets/sls  # dataset root dir
+train: images/train  # relative or absolute paths
+val: images/val
+#test: path/to/test/images  # if you have a test set
+
+kpt_shape: [14, 3]  # Assuming 2 dims: x,y
+# flip_idx: [ ... ]  # If applicable
+
+names:
+  0: skateboard  # replace with your actual class name

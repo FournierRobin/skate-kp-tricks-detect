@@ -1,0 +1,53 @@
+nose
+tail
+frontright_wheel
+frontleft_wheel
+backright_wheel
+backleft_wheel
+front_truck
+back_truck
+frontright_board
+frontleft_board
+backright_board
+backleft_board
+front_bolts
+back_bolts
+
+{
+  "keypoints": [
+	1"nose",
+    2"tail",
+    3"frontright_wheel",
+    4"frontleft_wheel",
+    5"backright_wheel",
+    6"backleft_wheel",
+    7"front_truck",
+    8"back_truck",
+    9"frontright_board",
+    10"frontleft_board",
+    11"backright_board",
+    "backleft_board",
+    "front_bolts",
+    "back_bolts"
+	],
+	"skeleton": [
+		[1,9],
+		[1,10],
+        [9,11],
+        [10,12],
+        [11,2],
+        [12,2],
+        [9,13],
+        [10,13],
+        [11,14],
+        [12,14],
+        [13,7],
+        [14,8],
+        [7,3],
+        [7,4],
+        [8,5],
+        [8,6],
+        [3,4],
+        [5,6]
+  ]
+}
