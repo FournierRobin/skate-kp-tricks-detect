@@ -66,5 +66,5 @@ def main(json_file_path):
 
 # Entry point
 if __name__ == "__main__":
-    json_file_path = "annotations/completed_only-3.json"
+    json_file_path = "annotations/annotations-4.json"
     main(json_file_path)

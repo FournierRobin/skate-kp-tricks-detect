@@ -3,15 +3,20 @@ import shutil
 import random
 
 # Paths
-output_labels_path = "output/"
+output_labels_path = "annotations/output/"
 images_full_path = "datasets/sls/imagesfull/"
 labels_train_path = "datasets/sls/labels/train/"
 labels_val_path = "datasets/sls/labels/val/"
 images_train_path = "datasets/sls/images/train/"
 images_val_path = "datasets/sls/images/val/"
 
+# Check if a file already exists in train or val folders
+def file_exists_in_target(filename):
+    return os.path.exists(os.path.join(labels_train_path, filename)) or \
+           os.path.exists(os.path.join(labels_val_path, filename))
+
 # List all the .txt files in the output folder
-txt_files = [f for f in os.listdir(output_labels_path) if f.endswith('.txt')]
+txt_files = [f for f in os.listdir(output_labels_path) if f.endswith('.txt') and not file_exists_in_target(f)]
 
 # Shuffle the list of txt files
 random.shuffle(txt_files)
