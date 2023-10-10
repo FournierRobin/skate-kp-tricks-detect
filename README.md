@@ -1,7 +1,6 @@
 # Skateboard Tricks Detection and Keypoint Recognition
 
-The goal of this project is to be able to detect skateboards & its keypoints with a fine-tuned yolov8 model.
-This can mainly help classify tricks and give insights to the user on how to improve his technique.
+The goal of this project is to detect skateboards and their keypoints using a fine-tuned YOLOv8 model. This can primarily help classify tricks and provide insights to the user on how to improve their technique.
 
 ## Table of Contents
 - [Introduction](#introduction)
